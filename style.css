@@ -9,7 +9,7 @@
 }
 
 /* ================== FLEXBOX ======================= */
-
+/* 
 header{
     text-align: center;
     max-width: 80%;
@@ -74,7 +74,7 @@ header{
     box-shadow: 0px -4px hsl(212, 86%, 64%), 0px 15px 15px hsl(180, 22%, 85%);
 }
 
-
+/* ***************** media query **************************** */
 @media screen and (max-width: 775px) {
 .header h1 {
     font-size: 30px;
@@ -94,6 +94,101 @@ header{
       margin-top: 20px;
   }
 
+} */
+/* ***************** media query **************************** */
+/* ================== FLEXBOX ======================= */
+
+/* ================== GRID ======================= */
+header{
+    text-align: center;
+    max-width: 80%;
+    margin: 8rem auto;
+}
+.header h1 {
+    font-size: 40px;
+    color: hsl(229, 6%, 66%);
+    font-weight: lighter;
+    
+}
+.header h2 {
+    font-size: 40px;
+    color: hsl(234, 12%, 34%);
+}
+.header p{
+    text-align: center;
+    margin-top: 2rem;
+    color: hsl(229, 6%, 66%);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.card {
+    
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 7px;
+}
+.card h3, p{
+    background-color: white;
+}
+.card img{
+    background-color: white;
+    padding: 9rem 0rem 0rem 14rem;
+}
+.item1, .item4{
+    margin-top: 250px;
+}
+.card h3{
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 1rem;
+}
+.card p{
+    line-height: 1.5;
+}
+.item1{
+    box-shadow: 0px -4px hsl(180, 62%, 55%), 0px 15px 15px hsl(180, 22%, 85%);
+}
+.item2{
+    box-shadow: 0px -4px hsl(0, 78%, 62%), 0px 15px 15px hsl(180, 22%, 85%);
+}
+.item3{
+    box-shadow: 0px -4px hsl(34, 97%, 64%), 0px 15px 15px hsl(180, 22%, 85%);
+}
+.item4{
+    box-shadow: 0px -4px hsl(212, 86%, 64%), 0px 15px 15px hsl(180, 22%, 85%);
 }
 
-/* ================== FLEXBOX ======================= */
+
+
+/* ***************** media query **************************** */
+@media screen and (max-width: 775px) {
+    header {
+        margin: 3rem auto;
+    }
+.header h1 {
+    font-size: 30px;
+}
+.header h2 {
+    font-size: 30px;
+}
+.header p{
+    margin-top: 1rem;
+}
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .item1, .item2, .itwm3, .item4 {
+      margin-top: 20px;
+  }
+
+} 
+/* ***************** media query **************************** */
+/* ================== GRID ======================= */
