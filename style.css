@@ -29,13 +29,13 @@ header{
     text-align: center;
     margin-top: 2rem;
     color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
 }
 .container{
     display: flex;
     justify-content: center;
 }
 .card {
-    
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .1);
     width: 300px;
@@ -120,6 +120,7 @@ header{
     margin-top: 2rem;
     margin-bottom: 2rem;;
     color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
 }
 .container {
     display: grid;
